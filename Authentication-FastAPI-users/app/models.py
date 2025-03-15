@@ -14,5 +14,5 @@ class User(SQLAlchemyBaseUserTableUUID, Base):
     dob = Column(Date, nullable=True)
     age = Column(Integer, nullable=True)
 class Desktop(SQLAlchemyBaseUserTableUUID, Base):
-    __tablename__ = "desktop"
-    password = Column(String, nullable=True)
+    __tablename__ = "alwameeting"
+    password = Column(Integer, nullable=False)
