@@ -13,6 +13,3 @@ class User(SQLAlchemyBaseUserTableUUID, Base):
     username = Column(String, unique=True, index=True, nullable=False)
     dob = Column(Date, nullable=True)
     age = Column(Integer, nullable=True)
-class Desktop(SQLAlchemyBaseUserTableUUID, Base):
-    __tablename__ = "alwameeting"
-    password = Column(Integer, nullable=False)
