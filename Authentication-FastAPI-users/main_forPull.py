@@ -37,6 +37,8 @@ app.include_router(
     fastapi_users.get_users_router(UserRead, UserUpdate),
     prefix="/users",
     tags=["users"],
+#     this is to check that merge is working correct or not
+
 )
 
 # Example of a protected route which requires an active user.
